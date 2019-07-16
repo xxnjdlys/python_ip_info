@@ -27,6 +27,7 @@ def ip_detail():
 
 if __name__ == "__main__":
     os.system("clear")
-    response = requests.get('https://httpbin.org/ip')
-    ip = response.json()["origin"]
-    print(ip_detail())
+    # response = requests.get('https://httpbin.org/ip')
+    response = requests.get('https://jsonip.com')
+    ip = response.json()["ip"]
+    print(ip_detail()
